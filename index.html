@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V.I.P. Club – profesionálne stávky SK/CZ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      padding: 2rem;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      max-width: 500px;
+    }
+    .logo img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+      color: gold;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    #link {
+      display: none;
+      margin-top: 1.5rem;
+      background: #222;
+      padding: 1rem;
+      border: 1px solid gold;
+      border-radius: 8px;
+      word-break: break-word;
+    }
+    button {
+      background-color: gold;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #e6c200;
+    }
+    .admin-contact {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.png" alt="VIP Club Logo">
+    </div>
+    <h1>V.I.P. CLUB – PROFESIONÁLNE STÁVKY SK/CZ</h1>
+    <p>Ďakujeme za vašu platbu.</p>
+    <button onclick="document.getElementById('link').style.display='block'">Zobraziť prístup do skupiny</button>
+    <div id="link">
+      👉 <strong>Telegram prístup:</strong><br>
+      <a href="#" style="color: gold">https://t.me/joinchat/VIPLinkFiktivny</a>
+    </div>
+    <div class="admin-contact">
+      V prípade zlyhania operácie píšte adminovi na TG: <strong>@VIPadmin</strong>
+    </div>
+  </div>
+</body>
+</html>
