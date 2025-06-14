@@ -1,87 +1,66 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>V.I.P. Club – profesionálne stávky SK/CZ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIP Tiket – 35 €</title>
+  <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #121212;
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
       text-align: center;
+      padding: 40px;
     }
     .container {
-      padding: 2rem;
-      background-color: #1e1e1e;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
       max-width: 500px;
-    }
-    .logo img {
-      width: 300px;
-      height: auto;
-      margin-bottom: 1rem;
-      border-radius: 12px;
+      margin: 0 auto;
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #000;
     }
     h1 {
-      font-size: 24px;
-      margin-bottom: 1rem;
-      color: gold;
+      font-size: 2em;
+      margin-bottom: 10px;
     }
     p {
-      margin-bottom: 1rem;
+      font-size: 1.1em;
+      margin-bottom: 25px;
     }
-    #link {
-      display: none;
-      margin-top: 1.5rem;
-      background: #222;
-      padding: 1rem;
-      border: 1px solid gold;
-      border-radius: 8px;
-      word-break: break-word;
-    }
-    button {
-      background-color: gold;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
+    .lemonsqueezy-button {
+      display: inline-block;
+      padding: 14px 25px;
+      background-color: #facc15;
       color: #000;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
     }
-    button:hover {
-      background-color: #e6c200;
-    }
-    .admin-contact {
-      font-size: 14px;
-      color: #ccc;
-      margin-top: 2rem;
+    .lemonsqueezy-button:hover {
+      background-color: #eab308;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="logo">
-      <img src="logo.png" alt="VIP Club Logo">
-    </div>
-    <h1>V.I.P. CLUB – PROFESIONÁLNE STÁVKY SK/CZ</h1>
-    <p>Ďakujeme za vašu platbu.</p>
-    <button onclick="document.getElementById('link').style.display='block'">Zobraziť prístup do skupiny</button>
-    <div id="link">
-      👉 <strong>Telegram prístup:</strong><br>
-      <a href="#" style="color: gold">https://t.me/joinchat/VIPLinkFiktivny</a>
-    </div>
-    <div class="admin-contact">
-      V prípade zlyhania operácie píšte adminovi na TG: <strong>@VIPadmin</strong>
-    </div>
+    <h1>🎯 VIP Tiket – 35 €</h1>
+    <p>Získaj exkluzívny tiket do súkromnej Telegram skupiny. Po zaplatení sa ti zobrazí odkaz na vstup do skupiny!</p>
+    
+    <!-- LemonSqueezy BUY BUTTON -->
+    <a 
+      href="https://yourstore.lemonsqueezy.com/buy/your-product-id"
+      class="lemonsqueezy-button"
+      data-theme="dark"
+      data-style="flat"
+      data-color="yellow"
+    >
+      🔐 Kúpiť tiket za 35 €
+    </a>
   </div>
 </body>
 </html>
