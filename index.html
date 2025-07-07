@@ -13,7 +13,7 @@
       padding: 40px;
     }
     .container {
-      max-width: 500px;
+      max-width: 600px;
       margin: 0 auto;
       background-color: #1e1e1e;
       padding: 30px;
@@ -31,4 +31,62 @@
     .paypal-button {
       display: inline-block;
       padding: 14px 25px;
-      background-color: #facc
+      background-color: #facc15;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+    .paypal-button:hover {
+      background-color: #eab308;
+    }
+    .terms {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+      text-align: left;
+    }
+    .terms h2 {
+      color: #facc15;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    // Automatický redirect po kliknutí na tlačidlo a po zaplatení
+    function openPayPalAndRedirect() {
+      window.open("https://www.paypal.com/ncp/payment/2G29JHLHCBQGY", "_blank");
+      setTimeout(() => {
+        window.location.href = "https://t.me/+abOYXBE5HCAwNmE0";
+      }, 5000); // Redirect po 5 sekundách
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 VIP Tiket – 35 €</h1>
+    <p>Získaj exkluzívny tiket do súkromnej Telegram skupiny. Po zaplatení sa automaticky presmeruješ do VIP skupiny.</p>
+
+    <!-- PayPal BUY BUTTON -->
+    <button class="paypal-button" onclick="openPayPalAndRedirect()">
+      🔐 Kúpiť tiket za 35 €
+    </button>
+
+    <div class="terms">
+      <h2>Obchodné podmienky</h2>
+      <p>Zakúpením VIP tiketu vyjadrujete súhlas s týmito podmienkami:</p>
+      <ul>
+        <li>VIP členstvo je digitálna služba – prístup do súkromnej Telegram skupiny s tipmi a analýzami.</li>
+        <li>Po zaplatení získavate prístup na 7 dní (alebo podľa dohody).</li>
+        <li>Služba je považovaná za poskytnutú okamžite po sprístupnení linku – preto nie je možnosť vrátenia platby.</li>
+        <li>Všetky tipy sú len odporúčania, neručíme za výsledky ani finančnú stratu.</li>
+        <li>Porušenie pravidiel (zdieľanie tipov, spam) môže viesť k zablokovaniu bez nároku na náhradu.</li>
+      </ul>
+      <p>V prípade otázok nás kontaktujte na <a href="mailto:tvoj@email.sk" style="color:#facc15;">tvoj@email.sk</a></p>
+    </div>
+  </div>
+</body>
+</html>
