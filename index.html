@@ -53,24 +53,30 @@
       color: #facc15;
       text-decoration: underline;
     }
+    .after-text {
+      margin-top: 25px;
+      font-size: 1em;
+      color: #aaa;
+    }
   </style>
   <script>
-    function openPayPalAndRedirect() {
+    function openPayPal() {
       window.open("https://www.paypal.com/ncp/payment/2G29JHLHCBQGY", "_blank");
-      setTimeout(() => {
-        window.location.href = "https://t.me/+abOYXBE5HCAwNmE0";
-      }, 5000); // Redirect after 5 seconds
     }
   </script>
 </head>
 <body>
   <div class="container">
     <h1>🎯 VIP Tiket – 35 €</h1>
-    <p>Získaj exkluzívny tiket do súkromnej Telegram skupiny. Po zaplatení sa automaticky presmeruješ do VIP skupiny.</p>
-
-    <button class="paypal-button" onclick="openPayPalAndRedirect()">
+    <p>Získaj exkluzívny tiket do súkromnej Telegram skupiny.</p>
+    
+    <button class="paypal-button" onclick="openPayPal()">
       🔐 Kúpiť tiket za 35 €
     </button>
+
+    <div class="after-text">
+      <p>Po zaplatení vám príde faktúra a následne vám bude odoslaný prístup do VIP skupiny ručne.</p>
+    </div>
 
     <div class="terms-link">
       <p>Zakúpením služby súhlasíš s <a href="https://vipclubskcz.github.io/Vip-Club/obchodne_podmienky.html" target="_blank">obchodnými podmienkami</a>.</p>
